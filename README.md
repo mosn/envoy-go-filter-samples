@@ -18,6 +18,8 @@ make build
 
 ## Run
 
+Notice: only works on amd64 architecture CPU yet.
+
 ```shell
 docker run -d -p 10000:10000 \
     -v `pwd`/libgolang.so:/usr/local/envoy-go-extension/libgolang.so \
