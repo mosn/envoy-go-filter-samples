@@ -1,10 +1,16 @@
 # envoy-go-filter-samples
 
-Go filter samples by using the low level API from [envoy-go-extension](https://github.com/mosn/envoy-go-extension).
+Samples for implementing filters by using pure Go, based on the low level APIs from [envoy-go-extension](https://github.com/mosn/envoy-go-extension).
 
 For high level usage, please wait for the API in [MOSN](https://github.com/mosn/mosn), coming soon.
 
+## Samples
+
+1. [simple](https://github.com/mosn/envoy-go-filter-samples/blob/master/simple/filter.go), basic usage demo.
+
 ## Build
+
+Compile Go filter into libgolang.so.
 
 ```shell
 make build
