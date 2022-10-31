@@ -56,11 +56,3 @@ func (f *filter) OnDestroy(reason api.DestroyReason) {
 func (f *filter) Callbacks() api.FilterCallbacks {
 	return f.callbacks
 }
-
-func ConfigFactory(interface{}) api.HttpFilterFactory {
-	return func(callbacks api.FilterCallbackHandler) api.HttpFilter {
-		return &filter{
-			callbacks: callbacks,
-		}
-	}
-}
